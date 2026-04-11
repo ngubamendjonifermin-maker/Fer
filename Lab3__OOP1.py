@@ -116,7 +116,7 @@ class DrawingWidget(QWidget):
             self._storage.add(CCircle(px, py))
 
         self.update()
-
+    #клавишей Del
     def keyPressEvent(self, event):
         if event.key() == Qt.Key_Delete:
             self._storage.remove_selected()
