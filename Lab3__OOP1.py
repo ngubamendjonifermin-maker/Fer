@@ -81,7 +81,7 @@ class DrawingWidget(QWidget):
         # чтобы работал Delete
         self.setFocusPolicy(Qt.StrongFocus)
         self.setFocus()
-
+    # Версия 3: praintEvent
     def paintEvent(self, event):
         painter = QPainter(self)
         painter.setRenderHint(QPainter.Antialiasing)
