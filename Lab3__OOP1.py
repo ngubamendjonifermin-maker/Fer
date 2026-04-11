@@ -39,7 +39,7 @@ class CCircle:
 
         painter.drawEllipse(QPoint(self._x, self._y), РАДИУС, РАДИУС)
 
-# Версия 3: добавил CircleStorage
+
 # CircleStorage собственный контейнер
 class CircleStorage:
     def __init__(self):
