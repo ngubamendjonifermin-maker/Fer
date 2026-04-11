@@ -81,14 +81,14 @@ class DrawingWidget(QWidget):
         # чтобы работал Delete
         self.setFocusPolicy(Qt.StrongFocus)
         self.setFocus()
-    # Версия 3: praintEvent
+    # Версия 4: praintEvent
     def paintEvent(self, event):
         painter = QPainter(self)
         painter.setRenderHint(QPainter.Antialiasing)
 
         for circle in self._storage:
             circle.draw(painter)
-
+    # Версия 5: Клавишей Ctrl
     def mousePressEvent(self, event):
         px, py = event.x(), event.y()
         ctrl = event.modifiers() & Qt.ControlModifier
