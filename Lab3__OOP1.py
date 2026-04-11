@@ -5,7 +5,7 @@ from PyQt5.QtCore import Qt, QPoint
 from PyQt5.QtGui import QPainter, QColor, QPen
 
 РАДИУС = 30  
-
+# Версия 2: добавил CCircle
 # CCircle объект знает всё о себе
 class CCircle:
     def __init__(self, x: int, y: int):
@@ -39,7 +39,7 @@ class CCircle:
 
         painter.drawEllipse(QPoint(self._x, self._y), РАДИУС, РАДИУС)
 
-
+# Версия 3: добавил CircleStorage
 # CircleStorage собственный контейнер
 class CircleStorage:
     def __init__(self):
