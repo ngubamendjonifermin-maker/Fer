@@ -862,6 +862,7 @@ class MainWindow(QMainWindow):
         self.scene_widget.container.resize_selected(dw, dh)
         self.scene_widget.update()
 
+# Версия 4: Добавлена точка входа main() для запуска приложения
 def main():
     app = QApplication(sys.argv)
     window = MainWindow()
