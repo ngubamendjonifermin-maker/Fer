@@ -778,6 +778,7 @@ class SceneWidget(QWidget):
             shape.set_bounds(bounds)
         self.update()
 
+# Версия 4: Добавлены MainWindow, панель инструментов и меню
 class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
