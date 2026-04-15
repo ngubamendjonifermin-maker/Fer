@@ -6,9 +6,7 @@ from PyQt5.QtWidgets import (
 from PyQt5.QtGui import QPainter, QColor, QPen, QPolygon
 from PyQt5.QtCore import Qt, QPoint
 
-# =========================
 # Контейнер
-# =========================
 class ShapeContainer:
     def __init__(self):
         self.shapes = []
@@ -24,7 +22,7 @@ class ShapeContainer:
         return self.shapes
 
 
-# =========================
+# Базовые классы фигур и контейнер
 # БАЗОВЫЙ КЛАССimport sys
 import math
 from PyQt5.QtCore import Qt, QPointF, QRectF
@@ -871,7 +869,7 @@ def main():
 if __name__ == "__main__":
     main()
 
-# =========================
+
 class Shape:
     def __init__(self, x, y, w, h, color=Qt.blue):
         self.x = x
@@ -908,9 +906,7 @@ class Shape:
             painter.drawRect(self.x, self.y, self.w, self.h)
 
 
-# =========================
 # ФИГУРЫ
-# =========================
 class Rectangle(Shape):
     def draw(self, painter):
         painter.setBrush(self.color)
@@ -958,9 +954,7 @@ class Triangle(Shape):
         self.draw_selection(painter)
 
 
-# =========================
 # CANVAS
-# =========================
 class Canvas(QWidget):
     def __init__(self):
         super().__init__()
@@ -1031,9 +1025,7 @@ class Canvas(QWidget):
         self.update()
 
 
-# =========================
 # ГЛАВНОЕ ОКНО
-# =========================
 class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
@@ -1096,9 +1088,7 @@ class MainWindow(QMainWindow):
         self.canvas.update()
 
 
-# =========================
 # ЗАПУСК
-# =========================
 if __name__ == "__main__":
     app = QApplication(sys.argv)
     w = MainWindow()
