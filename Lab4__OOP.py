@@ -1,4 +1,5 @@
-﻿import sys
+﻿# Полный код векторного редактора (Lab4)
+import sys
 from PyQt5.QtWidgets import (
     QApplication, QMainWindow, QWidget,
     QAction, QColorDialog
@@ -22,7 +23,7 @@ class ShapeContainer:
         return self.shapes
 
 
-# Базовые классы фигур и контейнер
+# Добавлены базовые классы Shape, фигуры и контейнер
 # БАЗОВЫЙ КЛАССimport sys
 import math
 from PyQt5.QtCore import Qt, QPointF, QRectF
