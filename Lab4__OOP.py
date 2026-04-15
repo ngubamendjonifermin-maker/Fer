@@ -578,7 +578,7 @@ class ResizeDialog(QDialog):
             except ValueError:
                 return None
         return new_params
-
+# Версия 3: Реализован SceneWidget: отрисовка, выделение, перемещение фигур мышью и клавишами
 class SceneWidget(QWidget):
     def __init__(self, parent=None):
         super().__init__(parent)
