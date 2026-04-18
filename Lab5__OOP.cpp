@@ -100,7 +100,7 @@ public:
     void method2() {
         cout << "\tDesc::method2()\n";
     }
-    // Версия 3:  приведение типов и RTTI
+    // Версия 3: приведение типов и RTTI 
     string classname() override {
         return "Desc";
     }
