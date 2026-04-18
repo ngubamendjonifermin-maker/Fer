@@ -87,7 +87,8 @@ public:
         cout << "Desc::~Desc() ДЕСТРУКТОР\n";
         delete descData;
     }
-    // Версия 2: виртуальные и невиртуальные методы
+
+    // Версия 2: виртуальные и невиртуальные методы 
     void nonVirtualMethod() {
         cout << "\tDesc::nonVirtualMethod()\n";
     }
