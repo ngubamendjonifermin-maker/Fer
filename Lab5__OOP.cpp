@@ -185,7 +185,7 @@ Base& f6() {
     Base* b = new Base();
     return *b;
 }
-// Версия 5:  smart pointers
+// Версия 5: smart pointers 
 // 4. УМНЫЕ УКАЗАТЕЛИ
 class Smart {
 public:
