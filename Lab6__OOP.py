@@ -10,9 +10,8 @@ from PyQt5.QtWidgets import (
     QDialog, QVBoxLayout, QLabel, QLineEdit, QPushButton, QMessageBox, QFileDialog
 )
 
-# ------------------------------------------------------------
+# Базовая структура проекта
 # Базовый класс Shape
-# ------------------------------------------------------------
 class Shape:
     def __init__(self, position, color=None):
         self.position = position
@@ -78,9 +77,8 @@ class Shape:
                             data.get("color_b", 255), data.get("color_a", 255))
         self.set_size_params(data)
 
-# ------------------------------------------------------------
+# Реализация базовых фигур
 # Круг
-# ------------------------------------------------------------
 class Circle(Shape):
     def __init__(self, center, radius=20, color=None):
         super().__init__(center, color if color else QColor(0,0,255))
