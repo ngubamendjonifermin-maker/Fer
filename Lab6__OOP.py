@@ -486,9 +486,8 @@ class Group(Shape):
         self.color = QColor(data.get("color_r",0), data.get("color_g",0),
                             data.get("color_b",255), data.get("color_a",255))
 
-# ------------------------------------------------------------
+# Добавление фабрики
 # Абстрактная фабрика
-# ------------------------------------------------------------
 class ShapeFactory:
     _shapes = {
         "Circle": Circle, "Square": Square, "Rectangle": Rectangle,
