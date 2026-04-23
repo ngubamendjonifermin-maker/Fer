@@ -272,7 +272,7 @@ class Triangle(Shape):
             return True
         return False
 
-# Добавление линии (сложная фигура)
+# Исправление Line
 # Линия (исправленная версия)
 class Line(Shape):
     def __init__(self, start_point, end_point, color=None):
