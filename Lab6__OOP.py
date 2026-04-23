@@ -1,4 +1,5 @@
-﻿# -*- coding: utf-8 -*-
+﻿# Полный код
+# -*- coding: utf-8 -*-
 import sys
 import math
 import json
