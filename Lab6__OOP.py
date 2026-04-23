@@ -114,9 +114,7 @@ class Circle(Shape):
             return True
         return False
 
-# ------------------------------------------------------------
 # Квадрат
-# ------------------------------------------------------------
 class Square(Shape):
     def __init__(self, center, side=40, color=None):
         super().__init__(center, color if color else QColor(0,0,255))
@@ -274,9 +272,8 @@ class Triangle(Shape):
             return True
         return False
 
-# ------------------------------------------------------------
+# Добавление линии (сложная фигура)
 # Линия (исправленная версия)
-# ------------------------------------------------------------
 class Line(Shape):
     def __init__(self, start_point, end_point, color=None):
         super().__init__(start_point, color if color else QColor(0,0,255))
