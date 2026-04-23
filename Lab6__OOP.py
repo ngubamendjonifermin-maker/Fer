@@ -401,9 +401,8 @@ class Line(Shape):
         if self.bounds is not None:
             self.center_in_bounds()
 
-# ------------------------------------------------------------
+# Реализация Composite (Group)
 # Группа (Composite)
-# ------------------------------------------------------------
 class Group(Shape):
     def __init__(self, position=None, color=None):
         if position is None: position = QPointF(0,0)
