@@ -1082,6 +1082,7 @@ class SceneWidget(QWidget):
             for ch in shape.get_children():
                 self._set_bounds_recursive(ch, bounds)
 
+# Добавлено главное окно приложения (MainWindow)
 # Главное окно
 class MainWindow(QMainWindow):
     def __init__(self):
