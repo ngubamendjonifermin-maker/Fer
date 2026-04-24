@@ -637,9 +637,8 @@ class ResizeDialog(QDialog):
                 return None
         return res
 
-# ------------------------------------------------------------
+# Сцена и взаимодействие с мышью
 # Область рисования
-# ------------------------------------------------------------
 class SceneWidget(QWidget):
     def __init__(self, parent=None):
         super().__init__(parent)
