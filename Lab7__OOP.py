@@ -780,6 +780,7 @@ class ShapeContainer(QObject):
                 self.arrows.append(arrow)
         self.changed.emit()
 
+# Добавлено дерево объектов (TreeView)
 # ДЕРЕВО ОБЪЕКТОВ (TreeView) – НАБЛЮДАТЕЛЬ
 class ObjectTreeWidget(QTreeWidget):
     def __init__(self, container, parent=None):
