@@ -1170,6 +1170,7 @@ class MainWindow(QMainWindow):
                 QMessageBox.information(self, "Успех", "Проект загружен")
             except Exception as e:
                 QMessageBox.critical(self, "Ошибка", f"Не удалось загрузить: {str(e)}")
+    # Добавлены пользовательские сценарии
     def show_stories(self):
         txt = """
         <h3>5 пользовательских историй</h3>
