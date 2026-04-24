@@ -260,7 +260,7 @@ class Triangle(Shape):
             self.center_in_bounds()
             return True
         return False
-
+# Реализация линии с возможностью изменения размера
 # Обычная линия
 class Line(Shape):
     def __init__(self, start_point, end_point, color=None):
