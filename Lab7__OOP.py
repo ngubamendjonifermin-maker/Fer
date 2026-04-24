@@ -178,6 +178,7 @@ class Rectangle(Shape):
             return True
         return False
 
+# Добавлены расширенные фигуры: эллипс, треугольник
 # Эллипс
 class Ellipse(Rectangle):
     def draw(self, painter):
