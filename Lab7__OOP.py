@@ -1149,6 +1149,7 @@ class MainWindow(QMainWindow):
             if src and tgt:
                 self.container.create_arrow(src, tgt)
                 self.scene.update()
+    # Добавлено сохранение и загрузка проектов (JSON)
     def save(self):
         path, _ = QFileDialog.getSaveFileName(self, "Сохранить проект", "", "JSON (*.json)")
         if path:
