@@ -378,6 +378,7 @@ class Line(Shape):
         if self.bounds is not None:
             self.center_in_bounds()
 
+# Реализация стрелок с зависимым поведением (наблюдатель)
 # Стрелка (Arrow) – наблюдает за перемещением источника
 class Arrow(Shape):
     def __init__(self, source, target, color=None):
