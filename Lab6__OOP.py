@@ -600,9 +600,8 @@ class ShapeContainer:
         for obj_data in data.get("objects", []):
             self.shapes.append(ShapeFactory.create_shape(obj_data))
 
-# ------------------------------------------------------------
 # Диалог изменения размера
-# ------------------------------------------------------------
+# Диалог изменения размера
 class ResizeDialog(QDialog):
     def __init__(self, shape, parent=None):
         super().__init__(parent)
