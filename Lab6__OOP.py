@@ -721,6 +721,7 @@ class SceneWidget(QWidget):
                         shape.move(dx, dy)
                     self.container.add(shape)
                     self.update()
+   # Поддержка drag & move
     def mouseMoveEvent(self, e):
         if self.dragging and self.drag_start is not None:
             delta = e.pos() - self.drag_start
