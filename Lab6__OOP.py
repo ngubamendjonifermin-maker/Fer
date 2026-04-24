@@ -844,6 +844,7 @@ class MainWindow(QMainWindow):
     def resize_sel(self, dw, dh): self.scene.container.resize_selected(dw, dh); self.scene.update()
     def group(self): self.scene.container.group_selected(); self.scene.update()
     def ungroup(self): self.scene.container.ungroup_selected(); self.scene.update()
+  # Сохранение и загрузка JSON
     def save(self):
         path, _ = QFileDialog.getSaveFileName(self, "Сохранить проект", "", "JSON (*.json)")
         if path:
