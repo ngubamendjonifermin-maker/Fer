@@ -1,4 +1,5 @@
-﻿# -*- coding: utf-8 -*-
+﻿# Инициализация проекта и базовая структура редактора
+# -*- coding: utf-8 -*-
 import sys
 import math
 import json
@@ -9,7 +10,7 @@ from PyQt5.QtWidgets import (
     QDialog, QVBoxLayout, QLabel, QLineEdit, QPushButton, QMessageBox,
     QFileDialog, QTreeWidget, QTreeWidgetItem, QSplitter, QComboBox
 )
-# Инициализация проекта и базовая структура редактора  
+# Реализация базового класса Shape
 # Базовый класс Shape
 class Shape(QObject):
     def __init__(self, position, color=None):
@@ -70,7 +71,7 @@ class Shape(QObject):
                             data.get("color_b", 255), data.get("color_a", 255))
         self.set_size_params(data)
 
-# Реализация базового класса Shape
+# Добавлены базовые фигуры: круг, квадрат, прямоугольник
 # Круг
 class Circle(Shape):
     def __init__(self, center, radius=20, color=None):
