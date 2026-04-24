@@ -559,6 +559,7 @@ class ShapeFactory:
         shape.load(data)
         return shape
 
+# Реализован контейнер фигур с паттерном Наблюдатель
 # КОНТЕЙНЕР С ПОДДЕРЖКОЙ НАБЛЮДАТЕЛЕЙ (OBSERVER)
 class ShapeContainer(QObject):
     changed = pyqtSignal()
