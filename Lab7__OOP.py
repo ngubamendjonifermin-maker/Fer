@@ -912,6 +912,7 @@ class AddArrowDialog(QDialog):
         tgt = self.target_combo.currentData()
         return src, tgt
 
+# Реализована интерактивная сцена (SceneWidget)
 # Область рисования
 class SceneWidget(QWidget):
     def __init__(self, container, parent=None):
