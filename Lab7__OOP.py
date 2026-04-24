@@ -9,7 +9,7 @@ from PyQt5.QtWidgets import (
     QDialog, QVBoxLayout, QLabel, QLineEdit, QPushButton, QMessageBox,
     QFileDialog, QTreeWidget, QTreeWidgetItem, QSplitter, QComboBox
 )
-
+# Инициализация проекта и базовая структура редактора
 # Базовый класс Shape
 class Shape(QObject):
     def __init__(self, position, color=None):
