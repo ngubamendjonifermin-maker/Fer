@@ -447,6 +447,7 @@ class Arrow(Shape):
         self.color = QColor(data.get("color_r", 255), data.get("color_g", 0),
                             data.get("color_b", 0), data.get("color_a", 255))
 
+# Реализация паттерна Компоновщик (класс Group) 
 # Группа (Composite)
 class Group(Shape):
     def __init__(self, position=None, color=None):
