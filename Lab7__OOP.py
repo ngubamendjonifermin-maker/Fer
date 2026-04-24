@@ -70,6 +70,7 @@ class Shape(QObject):
                             data.get("color_b", 255), data.get("color_a", 255))
         self.set_size_params(data)
 
+# Реализация базового класса Shape
 # Круг
 class Circle(Shape):
     def __init__(self, center, radius=20, color=None):
