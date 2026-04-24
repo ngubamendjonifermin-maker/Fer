@@ -846,6 +846,7 @@ class ObjectTreeWidget(QTreeWidget):
         for i in range(self.topLevelItemCount()):
             recurse(self.topLevelItem(i))
 
+# Добавлены диалоги (изменение размера и создание стрелок)
 # Диалог изменения размера
 class ResizeDialog(QDialog):
     def __init__(self, shape, parent=None):
